@@ -1,0 +1,977 @@
+#include<stdio.h>
+void calculator();
+void square_cube();
+void even_odd();
+void greatest_smallest();
+void energy();
+void cent_force();
+void area(); //rectangle
+void armstrong();
+void sec_min();
+void velocity();
+void distance();
+void m_percentage();
+void swapping();
+void sales_tax();
+void leap_year();
+void factorial();
+void power();
+void table();
+void prime();
+void temp();
+void bubble_sorting();
+void main()
+{
+    int value;
+    char loop_1='y',loop_2='y';
+    do   //loop_1 starting
+    {
+        system("cls");
+        system("color 2");
+        printf("Enter 1 to use Calculator\n");
+        printf("Enter 2 to find Square or Cube of a number\n");
+        printf("Enter 3 to use Even or Odd functions\n");
+        printf("Enter 4 to find Largest or Smallest of a number\n");
+        printf("Enter 5 to find Energy\n");
+        printf("Enter 6 to find Centripetal Force\n");
+        printf("Enter 7 to find Area of Rectangle\n");
+        printf("Enter 8 to find Armstrong number\n");
+        printf("Enter 9 to find Seconds or Minutes\n");
+        printf("Enter 10 to find Velocity\n");
+        printf("Enter 11 to find Distance\n");
+        printf("Enter 12 to find Marks Percentage\n");
+        printf("Enter 13 to find Swapping\n");
+        printf("Enter 14 to find Sales Tax\n");
+        printf("Enter 15 to find whether the year is leap or not\n");
+        printf("Enter 16 to find Factorial of a number\n");
+        printf("Enter 17 to find an Integer raised to the power of 'N'\n");
+        printf("Enter 18 to print table of any number\n");
+        printf("Enter 19 to find prime numbers\n");
+        printf("Enter 20 to find temperature\n");
+        printf("Enter 21 to use Bubble Sorting of your Array\n");
+        scanf("%d",&value);
+        if(value==1)
+            do   // loop_2 starting
+        {
+            system("cls");
+            system("color 4");
+            calculator();
+            printf("Enter Y to continue with calculator or Enter N to Exit\n");
+            fflush(stdin);scanf("%c",&loop_2);
+        }while(loop_2=='y' || loop_2=='Y');
+        else if(value==2) // loop_2 starting
+            do
+        {
+            system("cls");
+            system("color 9");
+            square_cube();
+            printf("Enter Y to continue Square and Cube or Enter N to Exit\n");
+            fflush(stdin);scanf("%c",&loop_2);
+        }while(loop_2=='y' || loop_2=='Y');
+        else if(value==3) // loop_2 starting
+            do
+        {
+            system("cls");
+            system("color 3");
+            even_odd();
+            printf("Enter Y to continue with Even Odd or Enter N to Exit\n");
+            fflush(stdin);scanf("%c",&loop_2);
+        }while(loop_2=='y' || loop_2=='Y');
+        else if(value==4) // loop_2 starting
+            do
+        {
+            system("cls");
+            system("color 4");
+            greatest_smallest();
+            printf("Enter Y to continue with Largest and Smallest number or Enter N to Exit\n");
+            fflush(stdin);scanf("%c",&loop_2);
+        }while(loop_2=='y' || loop_2=='Y');
+        else if(value==5) // loop_2 starting
+            do
+        {
+            system("cls");
+            system("color 9");
+            energy();
+            printf("Enter Y to continue with energy or Enter N to Exit\n");
+            fflush(stdin);scanf("%c",&loop_2);
+        }while(loop_2=='y' || loop_2=='Y');
+        else if(value==6) // loop_2 starting
+            do
+        {
+            system("cls");
+            system("color 3");
+            cent_force();
+            printf("Enter Y to continue with centripetal force or Enter N to Exit\n");
+            fflush(stdin);scanf("%c",&loop_2);
+        }while(loop_2=='y' || loop_2=='Y');
+        else if(value==7) // loop_2 starting
+            do
+        {
+            system("cls");
+            system("color 4");
+            area();
+            printf("Enter Y to continue with Area or Enter N to Exit\n");
+            fflush(stdin);scanf("%c",&loop_2);
+        }while(loop_2=='y' || loop_2=='Y');
+        else if(value==8) // loop_2 starting
+            do
+        {
+            system("cls");
+            system("color 9");
+            armstrong();
+            printf("Enter Y to continue with Armstrong number or Enter N to Exit\n");
+            fflush(stdin);scanf("%c",&loop_2);
+        }while(loop_2=='y' || loop_2=='Y');
+        else if(value==9) // loop_2 starting
+            do
+        {
+            system("cls");
+            system("color 3");
+            sec_min();
+            printf("Enter Y to continue with Minutes and Seconds or Enter N to Exit\n");
+            fflush(stdin);scanf("%c",&loop_2);
+        }while(loop_2=='y' || loop_2=='Y');
+        else if(value==10) // loop_2 starting
+            do
+        {
+            system("cls");
+            system("color 4");
+            velocity();
+            printf("Enter Y to continue with velocity or Enter N to Exit\n");
+            fflush(stdin);scanf("%c",&loop_2);
+        }while(loop_2=='y' || loop_2=='Y');
+        else if(value==11) // loop_2 starting
+            do
+        {
+            system("cls");
+            system("color 9");
+            distance();
+            printf("Enter Y to continue with distance or Enter N to Exit\n");
+            fflush(stdin);scanf("%c",&loop_2);
+        }while(loop_2=='y' || loop_2=='Y');
+        else if(value==12) // loop_2 starting
+            do
+        {
+            system("cls");
+            system("color 3");
+            m_percentage();
+            printf("Enter Y to continue with Marks Percentage or Enter N to Exit\n");
+            fflush(stdin);scanf("%c",&loop_2);
+        }while(loop_2=='y' || loop_2=='Y');
+        else if(value==13) // loop_2 starting
+            do
+        {
+            system("cls");
+            system("color 4");
+            swapping();
+            printf("Enter Y to continue with swapping or Enter N to Exit\n");
+            fflush(stdin);scanf("%c",&loop_2);
+        }while(loop_2=='y' || loop_2=='Y');
+        else if(value==14) // loop_2 starting
+            do
+        {
+            system("cls");
+            system("color 9");
+            sales_tax();
+            printf("Enter Y to continue with Sales Tax or Enter N to Exit\n");
+            fflush(stdin);scanf("%c",&loop_2);
+        }while(loop_2=='y' || loop_2=='Y');
+        else if(value==15)
+            do
+        {
+            system("cls");
+            system("color 3");
+            leap_year();
+            printf("Enter Y to continue with Leap Year or Enter N to exit\n");
+            fflush(stdin);scanf("%c",&loop_2);
+        }while(loop_2=='y' || loop_2=='Y');
+        else if(value==16)
+            do     // loop_2 starting
+        {
+            system("cls");
+            system("color 4");
+            factorial();
+            printf("Enter Y to continue with Factorial or Enter N to exit\n");
+            fflush(stdin);scanf("%c",&loop_2);
+        }while(loop_2=='y' || loop_2=='Y');
+        else if(value==17)
+            do
+        {
+            system("cls");
+            system("color 9");
+            power();
+            printf("Enter Y to continue with Factorial or Enter N to exit\n");
+            fflush(stdin);scanf("%c",&loop_2);
+        }while(loop_2=='y' || loop_2=='Y');
+        else if(value==18)
+            do
+        {
+            system("cls");
+            system("color 3");
+            table();
+            printf("Enter Y to continue with Table or Enter N to Exit\n");
+            fflush(stdin);scanf("%c",&loop_2);
+        }while(loop_2=='y' || loop_2=='Y');
+        else if(value==19)
+            do
+        {
+            system("cls");
+            system("color 4");
+            prime();
+            printf("Enter Y to continue with prime numbers or Enter N to Exit\n");
+            fflush(stdin);scanf("%c",&loop_2);
+        }while(loop_2=='y' || loop_2=='Y');
+        else if(value==20)
+            do
+        {
+            system("cls");
+            system("color 9");
+            temp();
+            printf("Enter Y to continue with temperature or Enter N to Exit\n");
+            fflush(stdin);scanf("%c",&loop_2);
+        }while(loop_2=='y' || loop_2=='Y');
+        else if(value==21)
+        do
+        {
+            system("cls");
+            system("color 3");
+            bubble_sorting();
+            printf("Enter Y to continue with Bubble Soring or Enter N to Exit\n");
+            fflush(stdin);scanf("%c",&loop_2);
+        }while(loop_2=='y' || loop_2=='Y');
+        else
+        {
+            system("cls");
+            system("color 4");
+            printf("Invalid Input\n");
+        }
+            printf("Enter Y to continue with Main Menu or Enter N to Exit\n");
+            fflush(stdin);scanf("%c",&loop_1);
+    }while(loop_1=='y');
+}
+
+                        // Function for calculator
+void calculator()
+{
+    int a,b,e,diff,div,remain;
+    char choice='y',option='y';
+           // do
+            //{
+            system("cls");
+            printf("Enter 1 to find Sum\n");
+            printf("Enter 2 to find Difference of two numbers\n");
+            printf("Enter 3 to find Product\n");
+            printf("Enter 4 to find Division\n");
+            printf("Enter 5 to find Remainder\n");
+            printf("Enter 6 to find Average\n");
+            scanf("%d",&e);
+
+
+    if(e==1)
+    {
+        int n,i,j,sum=0;
+        char loop_1='y';
+
+        do                                      // nested loop for calculator
+        {
+            system("cls");
+            printf("Enter the size of the Array:-\n");
+            scanf("%d",&n);
+            int num[n];
+            n=n-1;
+    for(i=0;i<=n;i++)
+    {
+        printf("Enter Element no:-%d\n",i+1);
+        scanf("%d",&num[i]);
+        sum=sum+num[i];
+    }
+    printf("Total Sum is %d\n",sum);
+            printf("Enter Y to continue with sum or Enter N to Exit\n");
+            fflush(stdin);scanf("%c",&choice);
+        }
+        while(choice=='y' || choice=='Y');
+    }
+    else if(e==2)
+    {
+
+        do                                   // nested loop for calculator
+        {
+            system("cls");
+            printf("Enter 1st number\n");
+            fflush(stdin);scanf("%d",&a);
+            printf("Enter 2nd number\n");
+            fflush(stdin);scanf("%d",&b);
+            diff=a-b;
+            printf("Difference is %d\n",diff);
+            printf("Enter Y to continue with Difference or Enter N to Exit");
+            fflush(stdin);scanf("%c",&choice);
+        }
+        while(choice=='y' || choice=='Y');
+    }
+    else if(e==3)
+    {
+        int n,i,j,pro=1;
+        do                                  // nested loop for calculator
+        {
+            system("cls");
+            printf("Enter the size of the Array:-\n");
+            scanf("%d",&n);
+            n=n-1;
+            int num[n];
+    for(i=0;i<=n;i++)
+    {
+        printf("Enter Element no:-%d\n",i+1);
+        scanf("%d",&num[i]);
+        pro=num[i]*pro;
+    }
+    printf("Total Product is %d\n",pro);
+            printf("Enter Y to continue with Product or Enter N to Exit");
+            fflush(stdin);scanf("%c",&choice);
+        }
+        while(choice=='y' || choice=='Y');
+    }
+    else if(e==4)
+    {
+        do                                // nested loop for calculator
+        {
+            system("cls");
+            printf("Enter 1st number\n");
+            fflush(stdin);scanf("%d",&a);
+            printf("Enter 2nd number\n");
+            fflush(stdin);scanf("%d",&b);
+            float div=a/(b);
+            printf("Division is %d\n",div);
+            printf("Enter Y continue with Division or Enter N to Exit");
+            fflush(stdin);scanf("%c",&choice);
+        }
+        while(choice=='y' || choice=='Y');
+    }
+    else if(e==5)
+    {
+        do                               // nested loop for calculator
+        {
+            system("cls");
+            printf("Enter 1st number\n");
+            fflush(stdin);scanf("%d",&a);
+            printf("Enter 2nd number\n");
+            fflush(stdin);scanf("%d",&b);
+            remain=a%b;
+            printf("Remainder is %d\n",remain);
+            printf("Enter Y to continue with Remainder or Enter N to Exit");
+            fflush(stdin);scanf("%c",&choice);
+        }
+        while(choice=='y' || choice=='Y');
+    }
+    else if(e==6)
+    {
+            int n,i,j=0;
+            float avg;
+        do                            // nested loop for calculator
+    {
+        system("cls");
+        printf("Enter the length of Array:-\n");
+        scanf("%d",&n);
+        n=n-1;
+        int num[n];
+        for(i=0;i<=n;i++)
+    {
+        printf("Enter Element no:-%d\n",i+1);
+        scanf("%d",&num[i]);
+        j=j+num[i];
+    }
+    avg=j/(n+1);
+    printf("Total average is %.2f\n",avg);
+            printf("Enter Y to continue with Average or Enter N to Exit");
+            fflush(stdin);scanf("%c",&choice);
+    }while(choice=='y' || choice=='Y');
+    }
+    else
+    {
+        system("cls");
+        printf("Invalid input\n");
+    }
+        /*printf("Enter Y to continue with Calculator or Enter N to Exit\n");
+        fflush(stdin);scanf("%c",&option);*/
+//}while(option=='y');
+}
+
+                              //starting function for square and cube
+void square_cube()
+{
+        int a,b,c;
+        system("cls");
+    printf("Enter 1 for squaring\n");
+    printf("Enter 2 for cube\n");
+    scanf("%d",&b);
+    if(b==1)
+    {
+        system("cls");
+        printf("Enter an integer value for squaring\n");
+        scanf("%d",&a);
+        c=a*a;
+        printf("Square is %d*%d=%d\n",a,a,c);
+    }
+    if(b==2)
+    {
+        system("cls");
+        printf("Enter an integer value for cubing\n");
+        scanf("%d",&a);
+        c=a*a*a;
+        printf("Cube is %d*%d*%d=%d\n",a,a,a,c);
+    }
+}
+
+                        //Function for Even and Odd
+void even_odd()
+{
+    int num[50],a,b,c;
+    int num1,n;
+    char loop_1='y';
+    system("cls");
+    printf("Enter 1 to find whether the number is Even or Odd\n");
+    printf("Enter 2 to find Even or Odd numbers using array\n");
+    scanf("%d",&n);
+    if(n==1)
+    do
+    {
+        system("cls");
+    printf("Enter an integer to find whether its Even or Odd\n");
+    fflush(stdin);scanf("%d",&num1);
+    if(num1%2==0)
+       {
+           printf("Number is Even\n");
+       }
+    else
+    {
+        system("cls");
+    printf("Number is Odd\n");
+    }
+    printf("Enter Y to continue with same function or Enter N to Exit\n");
+    fflush(stdin);scanf("%c",&loop_1);
+    }while(loop_1=='y' || loop_1=='Y');
+    else if(n==2)
+    do
+    {
+        system("cls");
+    printf("Enter 1 to find Even numbers\n");
+    printf("Enter 2 to find Odd numbers\n");
+    scanf("%d",&c);
+    if(c==1)
+    {
+        system("cls");
+        printf("Enter the size of array\n");
+        scanf("%d",&a);a=a-1; //i subtracted 1 because the index always starts from 0 so it would be an extra memory location without subtraction
+    for(b=0;b<=a;b++)
+    {
+        printf("Enter Element no:%d\n",b+1);
+        scanf("%d",&num[b]);
+    }
+    system("cls");
+    printf("\nFollowing numbers are Even numbers\n");
+    for(b=0;b<=a;b++)
+    {
+    if(num[b]%2==0)
+       {
+           printf("%d\n",num[b]);
+       }
+    else
+        continue;
+    }
+    }
+    else if(c==2)
+    {
+        system("cls");
+        printf("Enter the size of array\n");
+        scanf("%d",&a);a=a-1; //i subtracted 1 because the index always starts from 0 so it would be an extra memory location without subtraction
+        system("cls");
+    for(b=0;b<=a;b++)
+    {
+        system("cls");
+        printf("Enter Element no:%d\n",b+1);
+        scanf("%d",&num[b]);
+    }
+    system("cls");
+    printf("\nFollowing numbers are Odd numbers\n");
+    for(b=0;b<=a;b++)
+        {
+        if(num[b]%2==1)
+            printf("%d\n",num[b]);
+        else
+            continue;
+    }
+}
+else
+{
+    system("cls");
+    printf("Invalid Input\n");
+}
+printf("Enter Y to continue with same function or Enter N to Exit\n");
+fflush(stdin);scanf("%c",&loop_1);
+}while(loop_1=='y' || loop_1=='Y');
+}
+                        // Function for largest and smallest number
+void greatest_smallest()
+{
+   int num[1000],i,j,k,n,max,min,l;
+    printf("Enter 1 to find largest number\n");
+    printf("Enter 2 to find smallest number\n");
+    scanf("%d",&j);
+    if(j==1)
+    {
+        printf("Enter size of the array\n");
+        scanf("%d",&l);
+        l=l-1;
+        for(i=0;i<=l;i++)
+    {
+        printf("Enter Element no:%d\n",i+1);
+        scanf("%d",&num[i]);
+    }
+        max=num[0];
+        for(k=1;k<=l;k++)
+        {
+            if(max<num[k])
+            {
+                max=num[k];
+            }
+        }
+        printf("Largest number among the Elements is: %d\n",max);
+    }
+    else if(j==2)
+    {
+        printf("Enter size of the array\n");
+        scanf("%d",&l);
+        l=l-1;
+        for(i=0;i<=l;i++)
+    {
+        printf("Enter Element no:%d\n",i+1);
+        scanf("%d",&num[i]);
+    }
+        min=num[0];
+        for(k=1;k<=l;k++)
+        {
+            if(min>num[k])
+            {
+                min=num[k];
+            }
+        }
+        printf("Smallest number among the Elements is: %d\n",min);
+    }
+}
+
+                   // Function for energy
+void energy()
+{
+    float m,v,g,h,E;
+    printf("Enter the value of mass velocity gravity and hight respectively\n");
+    scanf("%f%f%f%f",&m,&v,&g,&h);
+    E=m*(v*v)/2+(m*g*h);
+    printf("Total Energy is =%f\n",E);
+}
+void cent_force()
+{
+    int m,v,r,F;
+    printf("Enter values to find Centripetal force F\n");
+    printf("Enter the value of mass m\n");
+    scanf("%d",&m);
+    printf("Enter the value of velocity v\n");
+    scanf("%d",&v);
+    printf("Enter the value of radius r\n");
+    scanf("%d",&r);
+    F=(m*v*v)/r;
+    printf("Centripetal force =%d\n",F);
+}
+
+              // Function for Area
+void area()
+{
+    int a,l,w;
+    printf("Enter Length of rectangle\n");
+    scanf("%d",&l);
+    printf("Enter Width of rectangle\n");
+    scanf("%d",&w);
+    a=l*w;
+    printf("Area of rectangle is %d*%d=%d meter\n",l,w,a);
+}
+
+            // Function for Armstrong number
+void armstrong()
+{
+    int a,b,c,d,e,g,h,i,j,k,z,n,armstrong;
+    char loop_4='y';
+    printf("Enter 1 to find whether the number is Armstrong number or not\n");
+    printf("Enter 2 to find Armstrong numbers upto n numbers\n");
+    scanf("%d",&n);
+    if(n==1)
+    do
+    {
+    printf("Enter any Integer to find out whether it is number is Armstrong number or not\n");
+    scanf("%d",&z);
+    a=z%10;
+    g=z/10;
+    b=g%10;
+    h=g/10;
+    c=h%10;
+    i=h/10;
+    d=i%10;
+    j=i/10;
+    e=j%10;
+    k=j/10;
+    armstrong=(a*a*a)+(b*b*b)+(c*c*c)+(d*d*d)+(e*e*e)+(k*k*k);
+    if(armstrong==z)
+        printf("%d is an Armstrong number\n",z);
+    else
+        printf("%d is not an Armstrong number\n",z);
+        printf("Enter Y to continue to find Armstrong number or Enter N to Exit\n");
+        fflush(stdin);scanf("%c",&loop_4);
+    }while(loop_4=='y');
+    else if(n==2)
+        do
+    {
+        int a,b,c,d,e,g,h,i,j,k,x,y,z,sum,condition;
+    printf("Enter Starting value for Armstrong number\n");
+    scanf("%d",&z);
+    printf("Enter Last value for Armstrong number\n");
+    scanf("%d",&y);
+    printf("Armstrong numbers from %d to %d are %d\n",z,y);
+    for(x=z;x<=y;x++)
+    {
+        a=x%10;
+        g=x/10;
+        b=g%10;
+        h=g/10;
+        c=h%10;
+        i=h/10;
+        d=i%10;
+        j=i/10;
+        e=j%10;
+        k=j/10;
+        sum=(a*a*a)+(b*b*b)+(c*c*c)+(d*d*d)+(e*e*e)+(k*k*k);
+        if(sum==x)
+            printf("%d\n",sum);
+        else
+            continue;
+    }
+    printf("Enter Y to continue to find Armstrong number upto n or Enter N to Exit\n");
+    fflush(stdin);scanf("%c",&loop_4);
+    }while(loop_4=='y');
+    else
+        printf("Invalid input\n");
+}
+
+     // Function for seconds and minutes
+void sec_min()
+{
+    int sec,min,hour,a,b;
+    printf("Press 1 for finding seconds\n");
+    if(a==1)
+    {
+    printf("Enter no of hours\n");
+    scanf("%d",&b);
+    hour=60*60*b;
+    printf("No of seconds in %d hours is =%d seconds\n",b,hour);
+    }
+    else if(a==2)
+    {
+    printf("Press 2 for finding minutes\n");
+    scanf("%d",&a);
+    printf("Enter no of hours\n");
+    scanf("%d",&b);
+    hour=60*b;
+    printf("No of minutes in %d hours is=%d minutes\n",b,hour);
+    }
+    else
+        printf("Invalid Input\n");
+}
+
+              // Function for velocity
+void velocity()
+{
+    float dis,vel,time;
+    printf("Enter the value of Displacement and time respectively\n");
+    scanf("%f%f",&dis,&time);
+    vel=dis/time;
+    printf("Velocity is =%f\n",vel);
+}
+
+            //Function for Distance
+void distance()
+{
+    float x,v,t,a,D;
+    printf("Enter the value of x, v, t, and a respectively\n");
+    scanf("%f%f%f%f",&x,&v,&t,&a);
+    D=x+(v*t)+1/(2*a*t*t);
+    printf("Distance is =%f\n",D);
+}
+
+            //Function for marks percentage
+void m_percentage()
+{
+    float marks,total,percent;
+    printf("Enter your obtained marks\n");
+    scanf("%f",&marks);
+    printf("Enter your total marks\n");
+    scanf("%f",&total);
+    percent=(marks/total)*100;
+    printf("You have got %f percent marks\n",percent);
+}
+
+            //Function for swapping
+void swapping()
+{
+    int a,b,c,d,e,g,h,i,j,k,z;
+    printf("Enter an integer value to swap it\n");
+    scanf("%d",&z);
+    /*a=z%10;
+    g=z/10;
+    b=g%10;
+    h=g/10;
+    c=h%10;
+    i=h/10;
+    d=i%10;
+    j=i/10;
+    e=j%10;
+    k=j/10;*/
+    if((9<z) && (z<100))
+        {
+        a=z%10;
+        g=z/10;
+        printf("Orignal number is %d and after Swapping it is %d%d\n",z,a,g);
+        }
+    else if((99<z) && (z<1000))
+        {
+        a=z%10;
+        g=z/10;
+        b=g%10;
+        h=g/10;
+        printf("Orignal number is %d and after Swapping it is %d%d%d\n",z,a,b,h);
+        }
+    else if((999<z) && (z<10000))
+        {
+        a=z%10;
+        g=z/10;
+        b=g%10;
+        h=g/10;
+        c=h%10;
+        i=h/10;
+        printf("Orignal number is %d and after Swapping it is %d%d%d%d\n",z,a,b,c,i);
+        }
+    else if((9999<z) && (z<100000))
+        {
+        a=z%10;
+        g=z/10;
+        b=g%10;
+        h=g/10;
+        c=h%10;
+        i=h/10;
+        d=i%10;
+        j=i/10;
+    printf("Orignal number is %d and after Swapping it is %d%d%d%d%d\n",z,a,b,c,d,j);
+        }
+    else if((99999<z) && (z<1000000))
+        {
+        a=z%10;
+        g=z/10;
+        b=g%10;
+        h=g/10;
+        c=h%10;
+        i=h/10;
+        d=i%10;
+        j=i/10;
+        e=j%10;
+        k=j/10;
+        printf("Orignal number is %d and after Swapping it is %d%d%d%d%d%d\n",z,a,b,c,d,e,k);
+        }
+    else
+        printf("Invalid input Enter only upto 6 digit number\n");
+}
+
+            //Function for Sales tax
+void sales_tax()
+{
+    float tax,percent,amount;
+    printf("Enter the value of total amount and tax percentage respectively\n");
+    scanf("%f%f",&amount,&percent);
+    tax=amount*(percent/100);
+    printf("tax is =%f\n",tax);
+}
+           // Function for Leap Year
+void leap_year()
+{
+    int a;
+    printf("Enter any Year to find whether it is Leap Year or not\n");
+    fflush(stdin);scanf("%d",&a);
+    if(a%4==0)
+        printf("%d is a Leap Year\n",a);
+    else
+        printf("%d is not a Leap Year\n");
+}
+void factorial()
+{
+    int a,b,fact=1;
+    printf("Enter any integer to find its Factorial\n");
+    fflush(stdin);scanf("%d",&a);
+    for(b=1;b<=a;b++)
+    {
+      fact*=b;
+    }
+    printf("Factorial of %d is %d\n",a,fact);
+}
+void power()
+{
+    int a,b,c,result=1;
+    printf("Enter any Integer\n");
+    scanf("%d",&a);
+    printf("Enter the power of that integer\n");
+    scanf("%d",&b);
+    for(c=1;c<=b;c++)
+    {
+        result=result*a;
+    }
+    printf("%d raised to the power of %d is %d\n",a,b,result);
+}
+void table()
+{
+    int a,b,c,product;
+    printf("Enter any integer to print its table\n");
+    scanf("%d",&a);
+    printf("Enter any integer to print the table of %d upto n times\n",a);
+    scanf("%d",&b);
+    printf("Table of %d upto %d times is given below:-\n",a,b);
+    for(c=1;c<=b;c++)
+    {
+        printf("%d*%d=%d\n",a,c,a*c);
+    }
+}
+void prime()
+{
+    int a,count,min,max;
+    printf("Enter Starting value");
+    scanf("%d",&min);
+    printf("Enter Last value");
+    scanf("%d",&max);
+    while(min<=max)
+        {
+         count = 0;
+         a=2;
+         while(a<=min/2)
+         {
+             if(min%a==0)
+             {
+                 count++;
+                 break;
+             }
+             a++;
+        }
+         if(count==0 && min!= 1)
+             printf("%d ",min);
+         min++;
+}
+         printf("These mentioned numbers are prime numbers\n");
+}
+void temp()
+{
+    int n;
+    float temp;
+    char loop_3='y';
+    printf("Enter 1 to find temperature in degree Fahrenheit\n");
+    printf("Enter 2 to find temperature in degree Celsius\n");
+    scanf("%d",&n);
+    if(n==1)
+        do
+    {
+        printf("Enter value of temperature in degree Celsius\n");
+        scanf("%f",&temp);
+        printf("Temperature in degree Fahrenheit is %.2f\n",temp*1.8+32);
+        printf("Enter Y to continue with Fahrenheit or Enter N to Exit\n");
+        fflush(stdin);scanf("%c",&loop_3);
+    }while(loop_3=='y');
+    else if(n==2)
+        do
+    {
+        printf("Enter value of temperature in degree Fahrenheit\n");
+        scanf("%f",&temp);
+        printf("Temperature in degree Celsius is %f\n",(temp-32)*.56);
+        printf("Enter Y to continue with Celsius or Enter N to Exit\n");
+        fflush(stdin);scanf("%c",&loop_3);
+    }while(loop_3=='y');
+    else
+        printf("Invalid input\n");
+}
+void bubble_sorting()
+{
+    char loop_3='y';
+    int a,n,z;
+    printf("Enter 1 to find Ascending Order\n");
+    printf("Enter 2 to find Descending Order\n");
+    scanf("%d",&a);
+    if(a==1)
+        do
+    {
+        printf("Enter length of your Array:-\n");
+    fflush(stdin);scanf("%d",&n);
+    n=n-1;
+    int num[n],i,j,k;
+    for(i=0;i<=n;i++)
+   {
+    printf("Enter variable no:- %d\n",i+1);
+    fflush(stdin);scanf("%d",&num[i]);
+   }
+   for(k=0;k<=n;k++)
+   {
+       for(j=0;j<=n;j++)
+    {
+        if(num[j]>num[j+1])
+    {
+        int swap;
+        swap=num[j];
+        num[j]=num[j+1];
+        num[j+1]=swap;
+        //printf("%d\n",num[j]);
+    }
+    }
+   }
+   printf("In ascending order\n");
+   for(k=0;k<=n;k++)
+   {
+       printf("%d  ",num[k]);
+   }
+        printf("\nEnter Y to continue with Ascending Order or Enter N to Exit\n");
+        fflush(stdin);scanf("%c",&loop_3);
+    }while(loop_3=='y' || loop_3=='Y');
+    else if(a==2)
+    do
+    {
+        printf("Enter length of your Array:-\n");
+        fflush(stdin);scanf("%d",&n);
+        n=n-1;
+        int num[n],i,j,k;
+    for(i=0;i<=n;i++)
+   {
+    printf("Enter variable no:- %d\n",i+1);
+    fflush(stdin);scanf("%d",&num[i]);
+   }
+   for(k=0;k<=n;k++)
+   {
+       for(j=0;j<=n;j++)
+    {
+        if(num[j]>num[j+1])
+    {
+        int swap;
+        swap=num[j];
+        num[j]=num[j+1];
+        num[j+1]=swap;
+        //printf("%d\n",num[j]);
+    }
+    }
+   }
+   printf("In descending order\n");
+   for(k=n;k>=0;k--)
+   {
+       printf("%d  ",num[k]);
+   }
+        printf("\nEnter Y to continue with Descending Order or Enter N to Exit\n");
+        fflush(stdin);scanf("%c",&loop_3);
+    }while(loop_3=='y' || loop_3=='Y');
+    else
+        printf("Invalid Input\n");
+}
